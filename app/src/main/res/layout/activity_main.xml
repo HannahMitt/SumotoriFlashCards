@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        tools:context="com.mittens.flashrikishi.MainActivity"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+    <RelativeLayout
+            android:id="@+id/main_view_rikishi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="1">
+
+        <include layout="@layout/item_rikishi_large"/>
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Show name"/>
+
+</LinearLayout>

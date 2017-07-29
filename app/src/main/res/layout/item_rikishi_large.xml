@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        android:id="@+id/rikishi_card"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:cardElevation="4dp">
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:animateLayoutChanges="true"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/rikishi_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/hakuho"
+                />
+
+        <TextView
+                android:id="@+id/rikishi_text_name"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:padding="8dp"
+                tools:text="Hakuho Sho"
+                android:background="@android:color/background_light"/>
+    </FrameLayout>
+</android.support.v7.widget.CardView>
+
